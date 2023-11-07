@@ -6,6 +6,10 @@ it will automatically changes the movie status.You can also filter and sort the 
 
 tags_metadata = [
     {
+      "name": "Authorize",
+      "description": "Login Here "
+    },
+    {
         "name": "Users",
         "description": "Operation done by users are here, Movie watching, give rating etc includes here"
     },
