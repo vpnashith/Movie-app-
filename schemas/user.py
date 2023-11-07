@@ -22,7 +22,7 @@ def serialize_user(items):
     return [single_serializer_user(item) for item in items]
 
 
-######################################################################
+#############################################################
 # ALTERNATE WAY
 def single_serializer_movie_short(movie) -> dict:
     return {**{i: str(movie[i]) for i in movie if i == '_id'}, **{i: movie[i] for i in movie if i != '_id'}}
@@ -31,4 +31,4 @@ def single_serializer_movie_short(movie) -> dict:
 # def serialize_movie(items) -> list:
 #     return [single_serializer_movie_short(item) for item in items]
 
-#######################################################################
+################################################################
