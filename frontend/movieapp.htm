@@ -1,0 +1,75 @@
+<!--
+    Module: movie_app.htm
+    Author: Nashith vp
+    Description: html file for movie_app front end
+
+    License:
+
+    Created on: 31-01-2024
+-->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="movieapp.css">
+  </head>
+
+  <div class="container">
+
+  <div class="title">
+    <h2>Movie Application</h2>
+  </div>
+
+    <div class="top-section">
+      <div class="Box-1-top-user"> 
+        <h3>User</h3>
+        <ul>
+          <li>create user</li>
+          <li>watch movie</li>
+          <li>post rating</li>
+          <li>find user</li>
+          <li>update user</li>
+          <li>delete user</li>
+        </ul>
+      </div><div class="Box-2-top-movies"> 
+        <h3>Movie</h3>
+        <ul>
+          <li>display movies</li>
+          <li>create movie info</li>
+          <li>edit movie info</li>
+          <li>delete the movie info</li>
+        </ul>
+     </div>
+
+    </div>
+    
+    
+    <div class="bottom-section">
+
+      <div class="Box-3-login"> 
+        <h3>Login to watch movies</h3>
+        <button type="button"> Login </button>
+      </div>
+
+      <div class="Box-4-sort"> 
+        <h3>Sort</h3>
+        <form action="/sort_page.php">
+          <label for="cars">Choose sorting option :</label>
+          <select name="sort" id="sort">
+            <option value="ascending">ascending</option>
+            <option value="descending">descending</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <div class="Box-5-filter"> 
+        <h3>Filter</h3>
+        <ul>
+          <li>Filte the moies</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</html>

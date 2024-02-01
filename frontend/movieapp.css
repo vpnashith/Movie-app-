@@ -1,0 +1,115 @@
+/* 
+    Module: movie_app.css
+    Author: Nashith vp
+    Description: css file for movie_app front end
+
+    License:
+
+    Created on: 31-01-2024
+ */
+ html{
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+  }
+  
+  *, *:before, :after{
+    box-sizing: inherit;
+  }
+  /* the above two blocks wll help to perfectly fit the boxes one inside other*/
+  
+  h3{   /* this block will help to fix the issue with wnwanted spacing according to our design*/
+    margin: 0;
+  }
+  
+  body{
+    padding: 50px;   /* to change position of the entire body in webpage*/
+  }
+
+  .container{
+    width: 350px;
+    height: 600px;
+    border: 3px solid rgb(59, 197, 190);
+    background-color: rgb(63, 171, 221);
+    box-shadow: 2px 3px 7px 3px grey;   /*to give the shadow to the box*/
+    border-radius: 5px;  /*to make edges curved */
+    overflow: hidden;
+   }
+  
+.title{
+    width: 100%;
+    height:10%;
+    text-align: center;
+    color: brown;
+}
+
+  .top-section{
+    width: 100%;
+    height:40%;
+   }
+  
+  .bottom-section{
+    width: 100%;
+    height:50%;
+  }
+  
+  .Box-1-top-user{
+    display: inline-block;
+    width: 50%;
+    height:100%;
+    padding: 15px;
+    vertical-align: top;
+  }
+  
+  .Box-2-top-movies{
+    display: inline-block;
+    width: 50%;
+    height:100%;
+    padding: 15px;
+    vertical-align: top;
+  }
+  
+  .Box-3-login{
+    width: 100%;
+    height:33%;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0.6rem;
+    font-family: sans-serif;
+  }
+
+  .Box-4-sort{
+    width: 100%;
+    height:33%;
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  .Box-5-filter{
+    width: 100%;
+    height:34%;
+    padding: 10px;
+    vertical-align: top;
+  }
+
+   
+  .top-section h3{
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .bottom-section h3{
+    margin-bottom: 10px;
+  }
+
+  button{
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
