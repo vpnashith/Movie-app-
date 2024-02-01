@@ -86,15 +86,24 @@
     height:33%;
     padding: 10px;
     vertical-align: top;
+    text-align: center;
+    
   }
 
+
+  .Box-4-sort h3{
+    font-size: 0.9rem;
+  }
   .Box-5-filter{
     width: 100%;
     height:34%;
     padding: 10px;
     vertical-align: top;
   }
-
+ 
+  .Box-5-filter h3{
+    text-align: center;
+  }
    
   .top-section h3{
     color: white;
@@ -111,5 +120,21 @@
     border: none;
     padding: 10px;
     width: 100%;
+    border-radius: 5px;
+  }
+
+  #sort{
+    border: none;
+    color: white;
+    background-color: grey;
+    width: 27%;
+    border-radius: 5px;
+  }
+  
+  input{
+    border: none;
+    color: white;
+    background-color: green;
+    width: 20%;
     border-radius: 5px;
   }
