@@ -1,7 +1,7 @@
 <!--
-    Module: movie_app.htm
+    Module: movieapp.htm
     Author: Nashith vp
-    Description: html file for movie_app front end
+    Description: html file for movieapp front end
 
     License:
 
@@ -17,27 +17,27 @@
     <div class="container">
 
     <div class="title">
-        <h2>Movie Application</h2>
+        <h2 style="text-align: center; vertical-align:bottom;">Movie Application</h2>
     </div>
 
         <div class="top-section">
         <div class="Box-1-top-user"> 
-            <h3>User</h3>
-            <ul>
-            <li>create user</li>
-            <li>watch movie</li>
-            <li>post rating</li>
-            <li>find user</li>
-            <li>update user</li>
-            <li>delete user</li>
+            <h3 >User</h3>
+            <ul style="cursor:pointer;">
+            <li id="create-user", onclick="create_user()">create user</li>
+            <li id="watch-movie", onclick="watch_movie()">watch movie</li>
+            <li id="post-rating", onclick="post_rating()">post rating</li>
+            <li id="find-user", onclick="find_user()">find user</li>
+            <li id="update-user", onclick="update_user()">update user</li>
+            <li id="delete-user", onclick="delete_user()">delete user</li>
             </ul>
         </div><div class="Box-2-top-movies"> 
             <h3>Movie</h3>
-            <ul>
-            <li>display movies</li>
-            <li>create movie info</li>
-            <li>edit movie info</li>
-            <li>delete the movie info</li>
+            <ul style="cursor: pointer;">
+            <li id="display-movies", onclick="display_movies()">display movies</li>
+            <li id="create-movie", onclick="create_movie_info()">create movie info</li>
+            <li id="edit-movie", onclick="edit_movie_info()">edit movie info</li>
+            <li id="delete-movie", onclick="delete_movie_info()">delete the movie info</li>
             </ul>
         </div>
 
@@ -48,7 +48,7 @@
 
         <div class="Box-3-login"> 
             <h3>Login to watch movies</h3>
-            <button type="button" onclick="demo_function()"> Login </button>
+            <button type="button" onclick="logging_in_function()" style="cursor: pointer;"> Login </button>
         </div>
 
         <div class="Box-4-sort"> 
