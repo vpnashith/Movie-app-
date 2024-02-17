@@ -26,16 +26,20 @@ create_user = () => {
 
     i = ++i % 2;
 
-    fetch("http://127.0.0.1:9000/user", {
-        method:"GET",
+    // get inputs from user
+    const inputs = document.querySelectorAll("create-user-inputs")
+    data = {
+        name: String(prompt("name")),
+        age: prompt("age"),
+        password : String(prompt("password"))
+    };
+
+    fetch("http://127.0.0.1:9000/user/", {
         method:"POST",
-        body: JSON.stringify(
-            {
-                "name":"ABCDE",
-                "age": 35,
-                "password": "nashi1234"
-            }
-        )
+        headers: {
+            "Content-Type": "application/json",   // FastAPI does not need header , Bcz it alredy sends in JSON format
+        },
+        body: JSON.stringify(data)
     }).then(res => res.json())
       .then(data => console.log(data))
       .catch(error => console.error("Error: ", error))
@@ -123,3 +127,14 @@ delete_movie_info = () => {
 
 }
 
+
+////////////// FILTER //////////////////
+sort_movie = () => {
+    let sort = document.getElementById("sort");
+    console.log(sort)
+    fetch("http://127.0.0.1:9000/movie/sort/" , {
+        method: "POST"
+    }).then(res => res.json())
+      .then(data => console.log(data))
+      .catch(error => console.log("Error: ", error))
+}

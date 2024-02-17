@@ -54,17 +54,17 @@
         <div class="Box-4-sort"> 
             <h3>Sort the movie according to rating</h3>
             <label for="cars">Choose sorting option :</label>
-            <select name="sort" id="sort">
-                <option value="ascending">ascending</option>
-                <option value="descending">descending</option>
+            <select name="sort" id="sort" style="cursor: pointer;">
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
             </select>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" style="cursor: pointer;" onclick="sort_movie()">
 
         </div>
 
         <div class="Box-5-filter"> 
             <h3>Filter</h3>
-            <ul>
+            <ul id="filter" onclick="filter()" style="cursor: pointer;">
             <li>Filte the movies</li>
             </ul>
         </div>
