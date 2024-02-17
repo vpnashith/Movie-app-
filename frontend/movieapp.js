@@ -16,12 +16,29 @@ function logging_in_function() {
 ////////////////////// USER ////////////////////////////
 let i = 0
 create_user = () => {
-    if (i % 2 == 0){st = "new user ceated";} else {st = "AAAAAAAAAAA"}; //jsut for demo
-    i= ++i % 2;
-    console.log(i)
+    if (i % 2 == 0){st = "new user ceated";} else {st = "create user"}; //jsut for demo
     const element = document.getElementById("create-user");
     element.textContent = st;
-    element.style.color = "white";
+    if (i % 2 == 0)
+        {element.style.color = "white";} 
+    else 
+        {element.style.color = "black";};
+
+    i = ++i % 2;
+
+    fetch("http://127.0.0.1:9000/user", {
+        method:"GET",
+        method:"POST",
+        body: JSON.stringify(
+            {
+                "name":"ABCDE",
+                "age": 35,
+                "password": "nashi1234"
+            }
+        )
+    }).then(res => res.json())
+      .then(data => console.log(data))
+      .catch(error => console.error("Error: ", error))
 
 }
 
@@ -73,6 +90,12 @@ display_movies = () => {
     const element = document.getElementById("display-movies");
     element.textContent = st;
     element.style.color = "white";
+
+    fetch('http://127.0.0.1:9000/', {
+        method:"GET"
+    }).then(res => res.json())  //response is converted into JSON format
+    .then(data => console.log(data))
+    .catch(error => console.error("Error: ", error))
 
 }
 
